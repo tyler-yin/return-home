@@ -1,0 +1,172 @@
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: white; 
+  color: black;
+
+  font-size: 14px;
+  font-family: sans-serif;
+} 
+
+.top, .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  gap: 64px;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8vh;
+  gap: 64px;
+}
+
+label {
+  display: none;
+}
+
+select {
+  width: 160px;
+  height: 32px;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 880px;
+  width: 832px;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.thumbnail-container img {
+  width: calc(1.5*48px);
+  height: calc(1.5*42px);
+  width: 72px;
+  height: 64px;
+}
+
+.thumb-border {
+  width: calc(1.5*48px);
+  height: calc(1.5*42px);
+  width: 72px;
+  height: 64px;
+  background: white;
+  border: 1px solid black;
+}
+
+.thumb {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  cursor: pointer;
+}
+
+.thumb.unknown {
+  opacity: 0;
+  cursor: initial;
+}
+
+.reset {
+  position: absolute;
+  top: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  cursor: initial;
+}
+
+.foggy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: filter 1s ease-in-out;
+  z-index: -2;
+}
+
+.foggy img {
+  height: calc(.5 * 700px);
+  width: calc(.5 * 800px);
+  position: absolute;
+  object-fit: cover;
+
+  mix-blend-mode: multiply;
+  opacity: calc(1/16);
+  filter: blur(20px);
+  transition: all 1s ease-in-out;
+}
+
+
+.foggy.exposed img {
+  filter: blur(0px); 
+}
+
+.foggy.exposed img.opacity-0 {
+  opacity: 0;
+}
+.foggy.exposed img.opacity-8 {
+  opacity: 1;
+}
+
+/* img.opacity-0 { 
+  opacity: calc(0/8);
+} */
+
+img.opacity-1 {
+  opacity: calc(1/8);
+  filter: blur(64px);
+}
+img.opacity-2 {
+  opacity: calc(2/8);
+  filter: blur(48px);
+}
+img.opacity-3 {
+  opacity: calc(3/8);
+  filter: blur(32px);
+}
+img.opacity-4 {
+  opacity: calc(4/8);
+  filter: blur(16px);
+}
+img.opacity-5 {
+  opacity: calc(5/8);
+  filter: blur(8px);
+}
+img.opacity-6 {
+  opacity: calc(6/8);
+  filter: blur(4px);
+}
+img.opacity-7 {
+  opacity: calc(7/8);
+  filter: blur(2px);
+}
+img.opacity-8 {
+  opacity: calc(8/8);
+  filter: blur(0px);
+}
