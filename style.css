@@ -85,7 +85,7 @@ select {
 
 .reset {
   position: absolute;
-  top: 880px;
+  top: calc(85vh + 98px);
   display: flex;
   flex-direction: column;
   justify-content: center;
