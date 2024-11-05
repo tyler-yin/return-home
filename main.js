@@ -25,18 +25,9 @@ const isLineSeven = (selectedValue) => selectedValue == 'line-7'
 const isLineEight = (selectedValue) => selectedValue == 'line-8'
 
 
-// TRY NEXT:
-// continue exploring ascii or pixelation treatment using combined images as source
-// edit photos for more contrast??
-// work on CSS of interface
-// create text artifacts of poem when verses are aligned 
-// explore dithering + shaders instead of / on top of blurring effect
-// explore blend modes?
-
-// FEEDBACK:
-// black background?
-// chinese characters?
-// more context?
+// TODO:
+// mark dropdown items that were already picked; reset marks when verses are reset
+// mobile friendly CSS
 
 initDropdowns()
 initThumbnails()

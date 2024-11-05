@@ -38,7 +38,23 @@ select {
   width: 160px;
   height: 32px;
   border: 1px solid black;
-  padding: 2px;
+  /* padding: 2px;   */
+
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
+  
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  
+  background: url("assets/dropdown-arrow.png") no-repeat;
+  background-position: right center;
+  background-color: white;
+  background-size: 20px;
+  color: black;
+  border: 1px solid black;
+  padding: 2px 6px;
 }
 
 .middle {
