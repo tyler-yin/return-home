@@ -26,8 +26,8 @@ const isLineEight = (selectedValue) => selectedValue == 'line-8'
 
 
 // TODO:
-// mark dropdown items that were already picked; reset marks when verses are reset
-// mobile friendly CSS
+// custom dropdowns that mark words that were already picked; reset marks when verses are reset
+// smaller images for thumbnails
 
 initDropdowns()
 initThumbnails()
